@@ -11,7 +11,6 @@
 	reroute_deflection = TRUE
 	no_guns = TRUE
 	allow_temp_override = FALSE
-	faction = list("carp")
 	help_verb = /mob/living/carbon/human/proc/sleeping_carp_help
 	var/old_grab_state = null
 
