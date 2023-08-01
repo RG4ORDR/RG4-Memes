@@ -10,6 +10,7 @@
 		#include "map_files\debug\runtimestation.dmm"
 		#include "map_files\YogStation\Yogstation.dmm"
 		#include "map_files\YogsMeta\YogsMeta.dmm"
+		#include "map_files/YogsDelta/YogsDelta.dmm"
 		#include "map_files\GaxStation\GaxStation.dmm"
 		#include "map_files\AsteroidStation\AsteroidStation.dmm"
 		#ifdef TRAVISBUILDING
