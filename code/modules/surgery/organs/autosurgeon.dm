@@ -11,6 +11,13 @@
 	var/organ_type = /obj/item/organ
 	var/uses = INFINITE
 	var/starting_organ
+	var/list/blacklist_items = list)
+		/obj/item/organ/regenerative_core
+		/obj/item/organ/regenerative_core/proc/preserved
+if(blacklist_items && is_type_in_list(I, blacklist_items))
+	if(user)
+		to_chat(user, span_warning("You are prevented from putting [I] into [src}!"))
+	return
 
 /obj/item/autosurgeon/Initialize(mapload)
 	. = ..()
